@@ -152,13 +152,14 @@ def judge_stock(area, target):
 
 def notify(title, message, click_url):
     r = requests.post(
-        f"https://ntfy.sh/{NTFY_TOPIC}",
-        data=message.encode("utf-8"),
-        headers={
-            "Title": title,
-            "Priority": "high",
-            "Tags": "tada,shopping_cart",
-            "Click": click_url,
+        "https://ntfy.sh/",
+        json={
+            "topic": NTFY_TOPIC,
+            "title": title,
+            "message": message,
+            "priority": 4,
+            "tags": ["tada", "shopping_cart"],
+            "click": click_url,
         },
         timeout=20,
     )
