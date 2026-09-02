@@ -165,6 +165,13 @@ def notify(title, message, click_url):
     r.raise_for_status()
 
 def main():
+    if os.environ.get("GITHUB_EVENT_NAME") == "workflow_dispatch":
+        notify(
+            "ベイバトルパス監視・テスト",
+            "GitHub Actions → Python → ntfy → iPhone の通知テスト成功！",
+            "https://github.com/"
+        )
+
     hits = []
 
     for target in TARGETS:
