@@ -1,0 +1,14 @@
+{
+  "edion": {
+    "price": 550,
+    "status": "not_target"
+  },
+  "rakuten": {
+    "price": 690,
+    "status": "hit"
+  },
+  "takaratomy": {
+    "price": 500,
+    "status": "not_target"
+  }
+}
