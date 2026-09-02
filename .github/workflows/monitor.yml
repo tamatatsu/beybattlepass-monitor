@@ -15,7 +15,7 @@ concurrency:
 jobs:
   check-stock:
     runs-on: ubuntu-latest
-    timeout-minutes: 4
+    timeout-minutes: 3
 
     steps:
       - name: Checkout
