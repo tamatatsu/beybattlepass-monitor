@@ -1,4 +1,8 @@
 {
+  "amazon": {
+    "price": 3680,
+    "status": "not_target"
+  },
   "edion": {
     "price": 550,
     "status": "not_target"
